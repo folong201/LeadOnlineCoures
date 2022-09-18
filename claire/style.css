@@ -1,0 +1,27 @@
+body{
+    background-color: brown;
+}
+.divi1{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    min-height: 120px;
+    margin: 5px;
+    text-align: center;
+}
+.toflex{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width:400px) {
+    /* .divi1{
+        display: initial;
+        justify-content: center;
+        width: 100%;
+    } */
+    .toflex{
+        display: initial;
+        justify-content: center;
+    }
+}
