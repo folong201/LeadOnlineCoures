@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('subscribtions', function (Blueprint $table) {
             $table->id();
+            $table->integer('user_id');
+            $table->integer('course_id');
+            $table->integer('status');
+            $table->integer('proression');
+            $table->integer('total');
             $table->timestamps();
         });
     }

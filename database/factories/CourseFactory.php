@@ -17,7 +17,10 @@ class CourseFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title'=>fake()->name(),
+            'description'=>fake()->text(),
+            'teacher_id'=>fake()->randomNumber(),
+            'name'=>fake()->name()
         ];
     }
 }

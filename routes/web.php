@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    dd("merde c'est quoi ?");
     return view('welcome');
 });
 
@@ -57,3 +58,8 @@ Route::get('blog.details', function () {
 
      return view('blog.details');
 })->name('blog.details');
+
+// authentificated user group
+Route::group(['auth'=>'Auth'],function(){
+
+});
